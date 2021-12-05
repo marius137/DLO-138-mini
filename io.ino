@@ -185,4 +185,3 @@ void readInpSwitches()	{
 	ADC1regs->SQR3 = PIN_MAP[AN_CH1].adc_channel;
 	delayMicroseconds(100);
 }
-

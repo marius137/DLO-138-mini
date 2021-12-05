@@ -3,6 +3,8 @@
 // Graphics library by ladyada/adafruit with init code from Rossum
 // MIT license
 
+#include "../../global.h"
+
 #ifndef _ADAFRUIT_TFTLCD_8BIT_STM32_H_
 #define _ADAFRUIT_TFTLCD_8BIT_STM32_H_
 
@@ -40,12 +42,12 @@
 #define TFT_DATA_NIBBLE	0 // take the lower 8 bits: 0..7
 //#define TFT_DATA_NIBBLE	8 // take the higher 8 bits: 8..15
 
-//Control pins |RD |WR |RS |CS |RST|
-#define TFT_RD         PB10
-#define TFT_WR         PC15
-#define TFT_RS         PC14
-#define TFT_CS         PC13
-#define TFT_RST        PB11
+//Control pins |RD |WR |RS |CS |RST| //Set via global.h
+//#define TFT_RD         PB10
+//#define TFT_WR         PC15
+//#define TFT_RS         PC14
+//#define TFT_CS         PC13
+//#define TFT_RST        PB11
 
 #if 0
 	// use old definition, standard bit toggling, low speed
